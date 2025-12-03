@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - ItaPets</title>
+  <link rel="stylesheet" href="css/cssstyles.css">
+</head>
+
+<body>
+  <header>
+    <article class="top">
+      <a href="index.html" class="logo-link">
+        <img src="img/logo.webp" alt="Logo ItaPets" class="logo-img">
+        <h1>ItaPets</h1>
+      </a>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </article>
+  </header>
+
+  <main class="container">
+    <article>
+      <h2>Fale Conosco</h2>
+      <p>Envie suas dúvidas, sugestões ou comentários sobre nossos produtos.</p>
+
+      <form action="mailto:alannarayssa@gmail.com" method="post" enctype="text/plain" class="form-contato">
+        <article class="linha-form">
+          <h3 class="visually-hidden">Informações Pessoais</h3>
+
+          <article class="campo">
+            <h4 class="visually-hidden">Campo Nome</h4>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required minlength="3">
+          </article>
+
+          <article class="campo">
+            <h4 class="visually-hidden">Campo Email</h4>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </article>
+        </article>
+
+        <article class="linha-form">
+          <h3 class="visually-hidden">Detalhes do Contato e Assunto</h3>
+
+          <article class="campo">
+            <h4 class="visually-hidden">Campo Telefone</h4>
+            <label for="telefone">Telefone (Ex: 99999-9999):</label>
+            <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{4,5}-[0-9]{4}"
+              title="Formato: 99999-9999 ou 9999-9999">
+          </article>
+
+          <article class="campo campo-radio">
+            <h4 class="visually-hidden">Campo Assunto</h4>
+            <fieldset>
+              <legend>Qual o principal assunto do seu contato?</legend>
+
+              <input type="radio" id="duvida" name="assunto" value="Dúvida sobre Produto" required>
+              <label for="duvida">Dúvida sobre Produto</label>
+
+              <input type="radio" id="sugestao" name="assunto" value="Sugestão ou Elogio">
+              <label for="sugestao">Sugestão ou Elogio</label>
+
+              <input type="radio" id="problema" name="assunto" value="Problema/Reclamação">
+              <label for="problema">Problema/Reclamação</label>
+
+              <input type="radio" id="parceria" name="assunto" value="Proposta de Parceria">
+              <label for="parceria">Proposta de Parceria</label>
+            </fieldset>
+          </article>
+        </article>
+
+        <article class="campo">
+          <h3 class="visually-hidden">Campo Mensagem</h3>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required minlength="20" maxlength="500"></textarea>
+        </article>
+
+        <article class="botoes">
+          <h3 class="visually-hidden">Botões de Ação</h3>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </article>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ItaPets - Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
